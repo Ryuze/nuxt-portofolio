@@ -65,7 +65,7 @@ export default {
     return {
       profile: {
         name: 'Alfian Yunianto Suseno',
-        photo: require('~/assets/profile.png'),
+        photo: require('~/assets/profile.jpg'),
       },
       education: [
         {

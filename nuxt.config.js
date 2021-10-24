@@ -7,7 +7,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'nuxt-portofolio',
+    title: 'Alfian Yunianto|Portofolio',
     htmlAttrs: {
       lang: 'en'
     },

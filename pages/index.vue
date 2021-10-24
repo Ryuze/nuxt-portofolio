@@ -65,7 +65,7 @@ export default {
     return {
       profile: {
         name: 'Alfian Yunianto Suseno',
-        photo: require('~/assets/profile.jpg'),
+        photo: require('~/assets/profile.png'),
       },
       education: [
         {
@@ -145,7 +145,7 @@ export default {
         {
           name: 'github',
           link: 'https://github.com/ryuze',
-          id: 'Ryuze',
+          id: 'Alfian Yunianto Suseno',
           icon: require('~/assets/icon/github-white.svg')
         },
         {

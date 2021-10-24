@@ -3,7 +3,16 @@
     <div class="mb-6">
       <p class="font-head text-center">PORTOFOLIO</p>
     </div>
-    <div class="grid grid-cols-2 gap-10 font-body m-4 place-content-center text-center">
+    <div
+      class="
+        grid grid-cols-2
+        gap-10
+        font-body
+        m-4
+        place-content-center
+        text-center
+      "
+    >
       <template v-for="(item, index) in content">
         <div
           :key="item.name"
@@ -21,13 +30,28 @@
           />
           <div class="flex flex-col m-4">
             <p class="text-xl font-bold pb-4">
-              <a :href="[item.link ? item.link : '#']" target="_blank">
-                {{ item.name }}
-              </a>
+              {{ item.name }}
             </p>
             <p>
               {{ item.desc }}
             </p>
+            <div class="mt-2">
+              <a
+                class="
+                  bg-green-500
+                  px-4
+                  py-2
+                  rounded
+                  font-bold
+                  shadow
+                  hover:bg-green-600
+                "
+                :href="[item.link ? item.link : '#']"
+                target="_blank"
+              >
+                Live Demo
+              </a>
+            </div>
           </div>
         </div>
       </template>

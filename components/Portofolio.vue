@@ -38,6 +38,9 @@
             <div class="mt-2">
               <a
                 class="
+                  transition
+                  duration-500
+                  ease-in-out
                   bg-green-500
                   px-4
                   py-2

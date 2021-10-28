@@ -9,7 +9,7 @@
     <a href="https://github.com/Ryuze" target="_blank">
       <div class="mx-4 my-2 flex">
         <img :src="require('~/assets/icon/github.svg')" class="w-10 h-10" />
-        <p class="align-middle mt-2 ml-2">Alfian Yunianto Suseno</p>
+        <p class="align-middle mt-2 ml-2 hidden md:block">Alfian Yunianto Suseno</p>
       </div>
     </a>
   </div>

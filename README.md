@@ -16,6 +16,3 @@ $ npm run start
 # generate static project
 $ npm run generate
 ```
-## Attention
-
-This portofolio is not ready for mobile, work in progress.

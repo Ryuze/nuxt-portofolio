@@ -36,7 +36,7 @@
       <Skill :skill-pr="skillPr" :skill-misc="skillMisc" />
     </section>
     <section
-      id="skill"
+      id="portofolio"
       data-aos="fade-up"
       data-aos-anchor-placement="center-bottom"
       data-aos-duration="500"
@@ -66,8 +66,6 @@
 </template>
 
 <script>
-import AOS from 'aos'
-import 'aos/dist/aos.css'
 import { mapState } from 'vuex'
 
 export default {
@@ -90,9 +88,6 @@ export default {
       'contact',
       'contributor',
     ]),
-  },
-  mounted() {
-    AOS.init()
   },
 }
 </script>

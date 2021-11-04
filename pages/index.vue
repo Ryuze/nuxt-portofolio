@@ -1,58 +1,67 @@
 <template>
-  <div>
-    <div id="background" class="fixed w-screen h-screen">
-      <div class="bg-black bg-opacity-50 w-full h-full absolute"></div>
-    </div>
-    <div class="relative">
+  <div id="body" class="grid gap-2">
+    <nav id="navigation">
       <NavBar />
-    </div>
-    <div>
-      <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-        <Profile :profile="profile" />
-      </div>
-      <div
-        data-aos="fade-up"
-        data-aos-anchor-placement="center-bottom"
-        class="pb-40"
-      >
-        <Education :education="education" />
-      </div>
-      <div
-        data-aos="fade-up"
-        data-aos-anchor-placement="center-bottom"
-        class="pb-40"
-      >
-        <Experience :experience="experience" />
-      </div>
-      <div
-        data-aos="fade-up"
-        data-aos-anchor-placement="center-bottom"
-        class="pb-40"
-      >
-        <Skill :skill-pr="skillPr" :skill-misc="skillMisc" />
-      </div>
-      <div
-        data-aos="fade-up"
-        data-aos-anchor-placement="center-bottom"
-        class="pb-40"
-      >
-        <Portofolio :content="portofolio" />
-      </div>
-      <div
-        data-aos="fade-up"
-        data-aos-anchor-placement="center-bottom"
-        class="pb-40"
-      >
-        <Certificate :cert="cert" />
-      </div>
-      <div
-        data-aos="fade-up"
-        data-aos-anchor-placement="center-bottom"
-        class="pb-40"
-      >
-        <Contact :contact="contact" />
-      </div>
-    </div>
+    </nav>
+    <section
+      id="profile"
+      data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom"
+      data-aos-duration="500"
+    >
+      <Profile :profile="profile" />
+    </section>
+    <section
+      id="education"
+      data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom"
+      data-aos-duration="500"
+    >
+      <Education :education="education" />
+    </section>
+    <section
+      id="experience"
+      data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom"
+      data-aos-duration="500"
+    >
+      <Experience :experience="experience" />
+    </section>
+    <section
+      id="skill"
+      data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom"
+      data-aos-duration="500"
+    >
+      <Skill :skill-pr="skillPr" :skill-misc="skillMisc" />
+    </section>
+    <section
+      id="skill"
+      data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom"
+      data-aos-duration="500"
+    >
+      <Portofolio :content="portofolio" />
+    </section>
+    <section
+      id="certificate"
+      data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom"
+      data-aos-duration="500"
+    >
+      <Certificate :certificate="certificate" />
+    </section>
+    <section
+      id="contact"
+      data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom"
+      data-aos-duration="500"
+    >
+      <Contact :contact="contact" />
+    </section>
+    <footer id="footer">
+      <NavFooter :contributors="contributor" />
+    </footer>
   </div>
 </template>
 
@@ -77,28 +86,29 @@ export default {
       'skillPr',
       'skillMisc',
       'portofolio',
-      'cert',
-      'contact'
-    ])
+      'certificate',
+      'contact',
+      'contributor',
+    ]),
   },
   mounted() {
-    window.VANTA.WAVES({
-      el: '#background',
-      mouseControls: false,
-      touchControls: true,
-      gyroControls: false,
-      minHeight: 200.0,
-      minWidth: 200.0,
-      scale: 1.0,
-      scaleMobile: 1.0,
-      color: 0x165c82,
-      shininess: 36.0,
-      waveHeight: 25.0,
-      waveSpeed: 0.5,
-      zoom: 1.42,
-    })
-
     AOS.init()
   },
 }
 </script>
+
+<style lang="postcss">
+section:nth-child(odd) {
+  @apply bg-gray-100;
+}
+
+.font-head {
+  font-family: 'Arso', sans-serif;
+  @apply font-bold text-3xl text-gray-700;
+}
+
+.font-body {
+  font-family: 'Open Sans', sans-serif;
+  @apply text-justify text-gray-700;
+}
+</style>

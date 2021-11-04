@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="grid gap-2">
     <div class="mb-6">
       <p class="font-head text-center">{{ header }}</p>
     </div>
@@ -23,11 +23,11 @@ export default {
 <style lang="postcss" scoped>
 .font-head {
   font-family: 'Arso', sans-serif;
-  @apply font-bold text-3xl text-gray-200;
+  @apply font-bold text-3xl text-gray-700;
 }
 
 .font-body {
   font-family: 'Open Sans', sans-serif;
-  @apply text-justify text-gray-200;
+  @apply text-justify text-gray-700;
 }
 </style>

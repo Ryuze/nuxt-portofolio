@@ -1,35 +1,32 @@
 <template>
-  <div id="contact" class="h-auto">
-    <div class="mb-6">
-      <p class="font-head text-center">KONTAK</p>
-    </div>
-    <div
-      class="grid gap-10 font-body m-4 justify-items-center"
+  <div class="grid gap-2 divide-y mt-2">
+    <div class="mx-auto"><p class="font-head">KONTAK</p></div>
+    <div class="grid justify-items-center place-items-stretch mx-2 gap-5"
       :class="
-        contact.length >= 3 ? 'grid-cols-3' : 'grid-cols-' + contact.length
+        contact.length >= 3 ? 'lg:grid-cols-3' : 'lg:grid-cols-' + contact.length
       "
     >
-      <template v-for="item in contact">
-        <div
-          :key="item.name"
-          class="flex justify-center items-center"
-          data-aos="zoom-in"
-          data-aos-duration="2000"
-          data-aos-delay="500"
-        >
-          <div class="flex">
-            <img class="h-10 w-10" :src="item.icon" alt="icon" />
-            <p v-if="item.link" class="ml-2 mt-2">
-              <a :href="item.link" target="_blank">
-                {{ item.id }}
-              </a>
-            </p>
-            <p v-else class="ml-2 mt-2">
-                {{ item.id }}
-            </p>
-          </div>
+      <article
+        v-for="item in contact"
+        :key="item.name"
+        class="grid lg:grid-cols-2 gap-0 justify-items-center place-items-center font-body"
+      >
+        <div class="lg:justify-self-end lg:mr-2">
+          <img
+            class="h-10 w-10"
+            :src="item.icon"
+            :alt="'Icon ' + item.name"
+          />
         </div>
-      </template>
+        <p v-if="item.link">
+          <a :href="item.link" class="transition hover:text-blue-600" target="_blank">
+            {{ item.id }}
+          </a>
+        </p>
+        <p v-else>
+          {{ item.id }}
+        </p>
+      </article>
     </div>
   </div>
 </template>
@@ -46,15 +43,3 @@ export default {
   },
 }
 </script>
-
-<style lang="postcss" scoped>
-.font-head {
-  font-family: 'Arso', sans-serif;
-  @apply font-bold text-3xl text-gray-200;
-}
-
-.font-body {
-  font-family: 'Open Sans', sans-serif;
-  @apply text-justify text-gray-200;
-}
-</style>

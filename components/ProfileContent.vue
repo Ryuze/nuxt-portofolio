@@ -1,7 +1,7 @@
 <template>
-  <div class="text-center">
+  <article class="text-center">
     <p class="font-head mb-6">ABOUT ME</p>
-    <div class="mx-10">
+    <div class="mx-10 lg:w-2/3 lg:mx-auto">
       <p class="font-body">
         Nama saya {{ name }}, saya berasal dari Universitas Singaperbangsa
         Karawang dan telah lulus pada bulan Agustus 2021 dengan IPK 3,46. Lahir
@@ -11,7 +11,7 @@
         3 bulan.
       </p>
     </div>
-  </div>
+  </article>
 </template>
 
 <script>
@@ -28,11 +28,11 @@ export default {
 <style lang="postcss" scoped>
 .font-head {
   font-family: 'Arso', sans-serif;
-  @apply font-bold text-3xl text-gray-200;
+  @apply font-bold text-3xl text-gray-700;
 }
 
 .font-body {
   font-family: 'Open Sans', sans-serif;
-  @apply text-justify text-gray-200;
+  @apply text-justify text-gray-700;
 }
 </style>

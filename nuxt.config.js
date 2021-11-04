@@ -21,12 +21,6 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
     script: [
-      {
-        src: "https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"
-      },
-      {
-        src: "https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"
-      },
     ]
   },
 

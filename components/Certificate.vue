@@ -1,32 +1,29 @@
 <template>
-  <div id="certificate" class="h-auto">
-    <div class="mb-6">
-      <p class="font-head text-center">SERTIFIKAT</p>
-    </div>
+  <div class="grid gap-2 divide-y mt-2">
+    <div class="mx-auto"><p class="font-head">SERTIFIKAT</p></div>
     <div
-      class="grid gap-10 font-body m-4 justify-items-center"
-      :class="cert.length >= 3 ? 'grid-cols-3' : 'grid-cols-' + cert.length"
+      class="grid justify-items-center place-items-center mx-2 gap-5"
+      :class="
+        certificate.length >= 3
+          ? 'lg:grid-cols-3'
+          : 'lg:grid-cols-' + certificate.length
+      "
     >
-      <template v-for="item in cert">
-        <div
-          :key="item.name"
-          class="flex justify-center items-center"
-          data-aos="zoom-in"
-          data-aos-duration="2000"
-          data-aos-delay="500"
-        >
-          <div class="flex flex-col">
-            <img
-              class="h-60 w-60 object-scale-down float-none rounded"
-              :src="item.image"
-              alt="sertifikat"
-            />
-            <p class="text-center">
-              {{ item.name }} - {{ item.id }}
-            </p>
-          </div>
-        </div>
-      </template>
+      <article
+        v-for="item in certificate"
+        :key="item.name"
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+        data-aos-delay="200"
+        data-aos-anchor-placement="bottom-bottom"
+      >
+        <img
+          class="h-1/4 w-1/4 object-scale-down rounded mx-auto mb-2"
+          :src="item.image"
+          :alt="'Sertifikat' + item.name"
+        />
+        <p class="text-center font-bold">{{ item.name }} - {{ item.id }}</p>
+      </article>
     </div>
   </div>
 </template>
@@ -34,7 +31,7 @@
 <script>
 export default {
   props: {
-    cert: {
+    certificate: {
       type: Array,
       default() {
         return []
@@ -43,15 +40,3 @@ export default {
   },
 }
 </script>
-
-<style lang="postcss" scoped>
-.font-head {
-  font-family: 'Arso', sans-serif;
-  @apply font-bold text-3xl text-gray-200;
-}
-
-.font-body {
-  font-family: 'Open Sans', sans-serif;
-  @apply text-justify text-gray-200;
-}
-</style>

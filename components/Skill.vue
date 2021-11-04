@@ -1,68 +1,49 @@
 <template>
-  <div id="skill" class="h-auto">
-    <template-body :header="'KEMAMPUAN'">
-      <template #body>
-        <div
-          class="grid grid-cols-3 gap-4 justify-items-center"
-          :class="
-            skillPr.length >= 3 ? 'grid-cols-3' : 'grid-cols-' + skillPr.length
-          "
-        >
-          <div
-            class="font-head col-start-1 items-center"
-            :class="
-              skillPr.length >= 3 ? 'col-span-3' : 'col-span-' + skillPr.length
-            "
-          >
-            Programming
-          </div>
-          <div
-            v-for="item in skillPr"
-            :key="item.name"
-            class="flex justify-center items-center"
-          >
-            <img :src="item.image" class="w-20 h-20" />
-            <p class="text-lg text-gray-200 ml-4">{{ item.name }}</p>
-          </div>
+  <div class="grid gap-2 divide-y mt-2">
+    <div class="mx-auto"><p class="font-head">KEMAMPUAN</p></div>
+    <div class="grid justify-items-center place-items-stretch mx-2 lg:grid-cols-2">
+      <article class="grid gap-2 justify-items-center place-items-stretch">
+        <div>
+          <p class="font-head">Programming</p>
         </div>
         <div
-          class="grid gap-4 justify-items-center"
+          class="grid gap-4 font-body"
+          :class="
+            skillPr.length >= 3
+              ? 'lg:grid-cols-3'
+              : 'lg:grid-cols-' + skillPr.length
+          "
+        >
+          <div v-for="item in skillPr" :key="item.name" class="px-2 py-2">
+            <img :src="item.image" class="w-20 h-20 mx-auto" :alt="'Icon ' + item.name" />
+            <p class="text-lg text-center">{{ item.name }}</p>
+          </div>
+        </div>
+      </article>
+      <article class="grid gap-2 justify-items-center place-items-stretch">
+        <div>
+          <p class="font-head">Networking & Lainnya</p>
+        </div>
+        <div
+          class="grid gap-4 font-body"
           :class="
             skillMisc.length >= 3
-              ? 'grid-cols-3'
-              : 'grid-cols-' + skillMisc.length
+              ? 'lg:grid-cols-3'
+              : 'lg:grid-cols-' + skillMisc.length
           "
         >
-          <div
-            class="font-head col-start-1 col-span-3 items-center"
-            :class="
-              skillMisc.length >= 3
-                ? 'col-span-3'
-                : 'col-span-' + skillMisc.length
-            "
-          >
-            Networking & Lainnya
-          </div>
-          <div
-            v-for="item in skillMisc"
-            :key="item.name"
-            class="flex justify-center items-center"
-          >
-            <img :src="item.image" class="w-20 h-20" />
-            <p class="text-lg text-gray-200 ml-4">{{ item.name }}</p>
+          <div v-for="item in skillMisc" :key="item.name" class="px-2 py-2">
+            <img :src="item.image" class="w-20 h-20 mx-auto" :alt="'Icon ' + item.name" />
+            <p class="text-lg text-center">{{ item.name }}</p>
           </div>
         </div>
-      </template>
-    </template-body>
+      </article>
+    </div>
   </div>
 </template>
 
 <script>
-import TemplateBody from './TemplateBody.vue'
 export default {
-  components: {
-    TemplateBody,
-  },
   props: {
     skillPr: {
       type: Array,

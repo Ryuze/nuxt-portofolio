@@ -1,21 +1,20 @@
 <template>
-  <div id="profile">
-    <div class="grid grid-cols-2 gap-0 h-screen divide-x">
-      <div class="m-auto">
-        <profile-photo :photo="profile.photo" />
-      </div>
-      <div class="m-auto">
-        <profile-content :name="profile.name" />
-      </div>
-    </div>
+  <div class="grid gap-2">
+    <article class="mx-auto mt-4">
+      <img
+        :src="profile.photo"
+        alt="Foto Profile"
+        class="rounded-md w-1/2 mx-auto lg:w-full"
+      />
+    </article>
+    <profile-content :name="profile.name" />
   </div>
 </template>
 
 <script>
 import ProfileContent from './ProfileContent.vue'
-import ProfilePhoto from './ProfilePhoto.vue'
 export default {
-  components: { ProfilePhoto, ProfileContent },
+  components: { ProfileContent },
   props: {
     profile: {
       type: Object,

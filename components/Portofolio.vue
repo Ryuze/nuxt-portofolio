@@ -42,6 +42,7 @@
           <p class="text-xl font-bold text-gray-700 m-2">{{ item.name }}</p>
           <p class="font-body mb-2">{{ item.desc }}</p>
           <a
+            v-if="item.link"
             class="
               transform
               transition

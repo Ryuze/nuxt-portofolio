@@ -56,10 +56,16 @@ export const state = () => ({
   portofolio: [
     {
       name: 'Simple Short Link',
-      link: '#',
+      link: '',
       image: require('~/assets/portofolio/sslink.png'),
       desc: 'Aplikasi ini berfungsi sebagai pemendek link yang cukup panjang, cara kerjanya adalah menyimpan link pada database yang kemudian akan menghasilkan random string sebagai kunci dari link tersebut. Ketika kunci digunakan maka akan redirect menuju link yang telah disimpan.',
     },
+    {
+      name: 'Document Controller',
+      link: '',
+      image: require('~/assets/portofolio/docController.png'),
+      desc: 'Aplikasi ini saya buat saat melakukan freelance, memiliki fungsi untuk melakukan pendataan dokumen yang dimiliki tiap partner perusahaan dan mensortingnya berdasarkan tipe dokumen tersebut. Aplikasi ini juga dapat melakukan eksport data dokumen yang terlihat disini sebagai file dengan format excel.'
+    }
   ],
   certificate: [
     {

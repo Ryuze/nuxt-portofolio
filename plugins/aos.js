@@ -4,5 +4,5 @@ import 'aos/dist/aos.css'
 export default ({ app }) => {
     app.AOS = setTimeout(() => {
         AOS.init()
-    }, 100);
+    }, 300);
 }

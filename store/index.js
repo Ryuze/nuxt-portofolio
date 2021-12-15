@@ -56,7 +56,7 @@ export const state = () => ({
   portofolio: [
     {
       name: 'Simple Short Link',
-      link: 'https://shrt.alfian.live',
+      link: '#',
       image: require('~/assets/portofolio/sslink.png'),
       desc: 'Aplikasi ini berfungsi sebagai pemendek link yang cukup panjang, cara kerjanya adalah menyimpan link pada database yang kemudian akan menghasilkan random string sebagai kunci dari link tersebut. Ketika kunci digunakan maka akan redirect menuju link yang telah disimpan.',
     },

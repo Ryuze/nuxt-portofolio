@@ -64,8 +64,14 @@ export const state = () => ({
       name: 'Document Controller',
       link: '',
       image: require('~/assets/portofolio/docController.png'),
-      desc: 'Aplikasi ini saya buat saat melakukan freelance, memiliki fungsi untuk melakukan pendataan dokumen yang dimiliki tiap partner perusahaan dan mensortingnya berdasarkan tipe dokumen tersebut. Aplikasi ini juga dapat melakukan eksport data dokumen yang terlihat disini sebagai file dengan format excel.'
-    }
+      desc: 'Aplikasi ini saya buat saat melakukan freelance, memiliki fungsi untuk melakukan pendataan dokumen yang dimiliki tiap partner perusahaan dan mensortingnya berdasarkan tipe dokumen tersebut. Aplikasi ini juga dapat melakukan eksport data dokumen yang terlihat disini sebagai file dengan format excel.',
+    },
+    {
+      name: 'AniWing',
+      link: 'https://aniwing.herokuapp.com/',
+      image: require('~/assets/portofolio/aniwing.png'),
+      desc: 'Aplikasi untuk menampilkan list anime yang tayang per musimnya, untuk akses ke website saat ini memakan waktu karena menggunakan hosting gratis',
+    },
   ],
   certificate: [
     {
@@ -103,63 +109,63 @@ export const state = () => ({
       link: 'https://iconscout.com/icons/github',
       name: 'Github Icon',
       contributor: 'https://iconscout.com/contributors/unicons',
-      contributor_name: 'Unicons Font'
+      contributor_name: 'Unicons Font',
     },
     {
       link: 'https://iconscout.com/icon/php-99',
       name: 'Php Icon',
       contributor: 'https://iconscout.com/contributors/icon-mafia',
-      contributor_name: 'Icon Mafia'
+      contributor_name: 'Icon Mafia',
     },
     {
       link: 'https://iconscout.com/icon/python-2',
       name: 'Python Icon',
       contributor: 'https://iconscout.com/contributors/icon-mafia',
-      contributor_name: 'Icon Mafia'
+      contributor_name: 'Icon Mafia',
     },
     {
       link: 'https://iconscout.com/icon/javascript-2038874',
       name: 'Javascript Icon',
       contributor: 'https://iconscout.com/contributors/maninderkaur',
-      contributor_name: 'Maninder Kaur'
+      contributor_name: 'Maninder Kaur',
     },
     {
       link: 'https://iconscout.com/icon/html-2752158',
       name: 'Html Logo',
       contributor: 'https://iconscout.com/contributors/jagathish',
-      contributor_name: 'Jagathish Saravanan'
+      contributor_name: 'Jagathish Saravanan',
     },
     {
       link: 'https://iconscout.com/icon/repair-tools-50',
       name: 'Repair tools Icon',
       contributor: 'https://iconscout.com/contributors/oviyan',
-      contributor_name: 'Amoghdesign'
+      contributor_name: 'Amoghdesign',
     },
     {
       link: 'https://iconscout.com/icon/nuxt-dot-js-3521615',
       name: 'Nuxt Dot Js Icon',
       contributor: 'https://iconscout.com/contributors/icon-54',
-      contributor_name: 'Icon 54'
+      contributor_name: 'Icon 54',
     },
     {
       link: 'https://iconscout.com/icons/linkedin',
       name: 'Linkedin Logo Icon',
       contributor: 'https://iconscout.com/contributors/stonehub',
-      contributor_name: 'Stone Hub'
+      contributor_name: 'Stone Hub',
     },
     {
       link: 'https://iconscout.com/illustration/developer-team-2043022',
       name: 'Developer Team Illustration',
       contributor: 'https://iconscout.com/contributors/delesign',
-      contributor_name: 'Delesign Graphics'
+      contributor_name: 'Delesign Graphics',
     },
     {
       link: 'https://iconscout.com/icons/gmail',
       name: 'Gmail Logo Icon',
       contributor: 'https://iconscout.com/contributors/oviyan',
-      contributor_name: 'Amoghdesign'
+      contributor_name: 'Amoghdesign',
     },
-  ]
+  ],
 })
 
 export const getters = {}

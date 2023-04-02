@@ -24,6 +24,11 @@ export const state = () => ({
       job: 'Fullstack Web Developer',
       time: '3 Bulan',
     },
+    {
+      company: 'Bank OCBC NISP',
+      job: 'Sofware Engineer',
+      time: 'Juni 2022 ~ Sekarang',
+    },
   ],
   skillPr: [
     {
@@ -41,6 +46,14 @@ export const state = () => ({
     {
       name: 'HTML',
       image: require('~/assets/icon/html.svg'),
+    },
+    {
+      name: 'C#',
+      image: require('~/assets/icon/csharp.svg'),
+    },
+    {
+      name: 'Golang',
+      image: require('~/assets/icon/go.svg'),
     },
   ],
   skillMisc: [
@@ -68,7 +81,7 @@ export const state = () => ({
     },
     {
       name: 'AniWing',
-      link: 'https://aniwing.herokuapp.com/',
+      link: 'https://octopus-app-yghjf.ondigitalocean.app/',
       image: require('~/assets/portofolio/aniwing.png'),
       desc: 'Aplikasi untuk menampilkan list anime yang tayang per musimnya, untuk akses ke website saat ini memakan waktu karena menggunakan hosting gratis',
     },
@@ -124,10 +137,22 @@ export const state = () => ({
       contributor_name: 'Icon Mafia',
     },
     {
-      link: 'https://iconscout.com/icon/javascript-2038874',
+      link: 'https://iconscout.com/icons/javascript',
       name: 'Javascript Icon',
-      contributor: 'https://iconscout.com/contributors/maninderkaur',
-      contributor_name: 'Maninder Kaur',
+      contributor: 'https://iconscout.com/contributors/icon-mafia',
+      contributor_name: 'Icon Mafia',
+    },
+    {
+      link: 'https://iconscout.com/icons/csharp',
+      name: 'Csharp Icon',
+      contributor: 'https://iconscout.com/contributors/icon-mafia',
+      contributor_name: 'Icon Mafia',
+    },
+    {
+      link: 'https://iconscout.com/icons/go',
+      name: 'Go Icon',
+      contributor: 'https://iconscout.com/contributors/icon-mafia',
+      contributor_name: 'Icon Mafia',
     },
     {
       link: 'https://iconscout.com/icon/html-2752158',
